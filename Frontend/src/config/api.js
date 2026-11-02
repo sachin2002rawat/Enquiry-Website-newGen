@@ -46,18 +46,11 @@ export const resolveBackendUrl = () => {
     }
 
     // 3. Dynamic Render deployment auto-detection:
-    // On Render, if the frontend static site is "service-frontend.onrender.com",
-    // the paired backend REST API web service is conventionally named "service-backend.onrender.com".
+    // When hosted on Render (e.g. enquiry-website-client.onrender.com),
+    // route directly to the active live Backend Web Service on Render.
     const host = window.location.hostname || ''
     if (host.endsWith('.onrender.com')) {
-      if (host.includes('-frontend')) {
-        const backendHost = host.replace('-frontend', '-backend')
-        return `https://${backendHost}`
-      }
-      if (host.includes('frontend')) {
-        const backendHost = host.replace('frontend', 'backend')
-        return `https://${backendHost}`
-      }
+      return 'https://enquiry-website-backend-0x3w.onrender.com'
     }
   }
 
