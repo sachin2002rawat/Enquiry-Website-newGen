@@ -14,16 +14,58 @@
  * which points to http://localhost:5000.
  */
 
-// Read base URL from Vite environment variables (supports VITE_API_URL, VITE_API_BASE_URL, or VITE_BACKEND_URL)
-const rawBase = (
-  (import.meta.env && import.meta.env.VITE_API_URL) ||
-  (import.meta.env && import.meta.env.VITE_API_BASE_URL) ||
-  (import.meta.env && import.meta.env.VITE_BACKEND_URL) ||
-  ''
-).trim().replace(/\/+$/, '')
+/**
+ * Resolves the Backend Server URL dynamically across build-time environment variables,
+ * runtime localStorage overrides, and auto-detected cloud deployment patterns (Render).
+ */
+export const resolveBackendUrl = () => {
+  // 1. Build-time Vite environment variables
+  const envUrl = (
+    (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_API_URL) ||
+    (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_API_BASE_URL) ||
+    (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_BACKEND_URL) ||
+    ''
+  ).trim().replace(/\/+$/, '')
 
-// Normalize Backend Root URL (strip trailing /api if the user accidentally included it in .env)
-export const BACKEND_URL = rawBase.replace(/\/api$/, '')
+  if (envUrl) {
+    return envUrl.replace(/\/api$/, '')
+  }
+
+  // 2. Runtime browser window or localStorage overrides (allows instant fix without full rebuild)
+  if (typeof window !== 'undefined') {
+    if (window.__API_URL__) {
+      return String(window.__API_URL__).trim().replace(/\/+$/, '').replace(/\/api$/, '')
+    }
+    try {
+      const stored = localStorage.getItem('VITE_API_URL') || localStorage.getItem('api_base_url')
+      if (stored && stored.trim()) {
+        return stored.trim().replace(/\/+$/, '').replace(/\/api$/, '')
+      }
+    } catch {
+      // ignore localStorage security restrictions
+    }
+
+    // 3. Dynamic Render deployment auto-detection:
+    // On Render, if the frontend static site is "service-frontend.onrender.com",
+    // the paired backend REST API web service is conventionally named "service-backend.onrender.com".
+    const host = window.location.hostname || ''
+    if (host.endsWith('.onrender.com')) {
+      if (host.includes('-frontend')) {
+        const backendHost = host.replace('-frontend', '-backend')
+        return `https://${backendHost}`
+      }
+      if (host.includes('frontend')) {
+        const backendHost = host.replace('frontend', 'backend')
+        return `https://${backendHost}`
+      }
+    }
+  }
+
+  return ''
+}
+
+// Normalize Backend Root URL
+export const BACKEND_URL = resolveBackendUrl()
 
 // Universal API Root (e.g. "https://api.example.com/api" or "/api" for relative proxy)
 export const API_BASE_URL = BACKEND_URL ? `${BACKEND_URL}/api` : '/api'
@@ -33,20 +75,18 @@ export const API_BASE_URL = BACKEND_URL ? `${BACKEND_URL}/api` : '/api'
  *
  * @param {string} endpoint - Path like '/products', 'categories', or '/api/settings'
  * @returns {string} Sanitized full URL
- *
- * Examples:
- *   getApiUrl('/products')      => "https://backend.onrender.com/api/products" (or "/api/products" in dev)
- *   getApiUrl('/api/health')    => "https://backend.onrender.com/api/health"
- *   getApiUrl('upload')         => "https://backend.onrender.com/api/upload"
  */
 export const getApiUrl = (endpoint = '') => {
-  if (!endpoint) return API_BASE_URL
+  const backend = resolveBackendUrl() || BACKEND_URL
+  const apiBase = backend ? `${backend}/api` : API_BASE_URL
+
+  if (!endpoint) return apiBase
   const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`
 
   if (cleanEndpoint.startsWith('/api/')) {
-    return BACKEND_URL ? `${BACKEND_URL}${cleanEndpoint}` : cleanEndpoint
+    return backend ? `${backend}${cleanEndpoint}` : cleanEndpoint
   }
-  return `${API_BASE_URL}${cleanEndpoint}`
+  return `${apiBase}${cleanEndpoint}`
 }
 
 /**
@@ -85,8 +125,8 @@ export const apiClient = async (endpoint, options = {}) => {
     headers
   }
 
-  // 30-second timeout controller to accommodate cloud database latency without false timeouts
-  const timeoutMs = options.timeout || 30000
+  // 60-second timeout controller to accommodate Render free-tier cold boot latency without false timeouts
+  const timeoutMs = options.timeout || 60000
   const controller = new AbortController()
   const timeoutId = setTimeout(() => controller.abort(), timeoutMs)
 
@@ -96,7 +136,21 @@ export const apiClient = async (endpoint, options = {}) => {
       signal: options.signal || controller.signal
     })
     clearTimeout(timeoutId)
-    const data = await response.json().catch(() => null)
+
+    const contentType = response.headers.get('content-type') || ''
+    const isJson = contentType.includes('application/json')
+    const data = isJson ? await response.json().catch(() => null) : null
+
+    // If server returned non-JSON (e.g. HTML from a static SPA rewrite or 502 Bad Gateway)
+    if (!isJson) {
+      console.warn(`[apiClient] Received non-JSON response from ${url}:`, { status: response.status, contentType })
+      return {
+        success: false,
+        status: response.status,
+        isHtmlResponse: true,
+        message: `Backend API server at ${url} returned a non-JSON response (${contentType || 'text/html'}). Please ensure your backend is deployed and VITE_API_URL is configured.`
+      }
+    }
 
     if (!response.ok) {
       return (
@@ -108,12 +162,19 @@ export const apiClient = async (endpoint, options = {}) => {
       )
     }
 
+    if (!data) {
+      return {
+        success: false,
+        message: `Failed to parse JSON response from server at ${url}.`
+      }
+    }
+
     return data
   } catch (error) {
     clearTimeout(timeoutId)
     const isTimeout = error.name === 'AbortError'
     const msg = isTimeout
-      ? `Request timed out. Unable to reach backend server at ${url}. Please ensure the backend is running.`
+      ? `Request timed out after ${timeoutMs / 1000}s. The backend server at ${url} may be waking up from cold sleep. Please wait a moment and try again.`
       : `Unable to connect to backend server at ${url}. Please verify server is running.`
     console.warn(`[apiClient] Network request failed for ${url}:`, error.message)
     return {

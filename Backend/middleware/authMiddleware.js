@@ -11,13 +11,13 @@ export const protectAdmin = async (req, res, next) => {
   try {
     let token = null
 
-    // 1. Check HTTP-only cookie first (preferred browser authentication)
-    if (req.cookies && req.cookies.admin_token) {
-      token = req.cookies.admin_token
-    }
-    // 2. Fallback to Authorization: Bearer <token> header (CLI, Postman, automated tests)
-    else if (req.headers.authorization && req.headers.authorization.startsWith('Bearer ')) {
+    // 1. Check Authorization: Bearer <token> header first (explicit client token, prevents stale cookie lockout)
+    if (req.headers.authorization && req.headers.authorization.startsWith('Bearer ')) {
       token = req.headers.authorization.split(' ')[1]
+    }
+    // 2. Fallback to HTTP-only cookie
+    else if (req.cookies && req.cookies.admin_token) {
+      token = req.cookies.admin_token
     }
 
     if (!token) {
@@ -27,8 +27,22 @@ export const protectAdmin = async (req, res, next) => {
       })
     }
 
-    // Verify token
-    const decoded = jwt.verify(token, envConfig.jwtSecret)
+    // Verify token with fallback check between header and cookie
+    let decoded = null
+    try {
+      decoded = jwt.verify(token, envConfig.jwtSecret)
+    } catch (tokenErr) {
+      // If header token was invalid/expired, try cookie token as fallback if available
+      if (req.cookies && req.cookies.admin_token && token !== req.cookies.admin_token) {
+        try {
+          decoded = jwt.verify(req.cookies.admin_token, envConfig.jwtSecret)
+          token = req.cookies.admin_token
+        } catch {}
+      }
+      if (!decoded) {
+        throw tokenErr
+      }
+    }
 
     // Find admin by ID
     const admin = await Admin.findById(decoded.id)

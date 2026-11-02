@@ -140,6 +140,12 @@ const startServer = (port) => {
     })
     .on('error', (err) => {
       if (err.code === 'EADDRINUSE' || err.code === 'EACCES') {
+        // In local development, if a port is in use or blocked by Windows OS, try the next port automatically
+        if (!envConfig.isProduction && port < 5020) {
+          console.warn(`⚠️ [Server] Port ${port} is unavailable (${err.code}). Automatically trying port ${port + 1}...`)
+          startServer(port + 1)
+          return
+        }
         console.error(`❌ [Fatal] Port ${port} is unavailable (${err.code}).`)
         process.exit(1)
       } else {

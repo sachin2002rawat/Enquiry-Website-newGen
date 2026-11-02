@@ -1,6 +1,7 @@
 import express from 'express'
 import {
   loginAdmin,
+  superAdminLogin,
   logoutAdmin,
   getMe,
   updateMyProfile
@@ -11,6 +12,7 @@ const router = express.Router()
 
 // Public authentication routes
 router.post('/login', loginAdmin)
+router.post('/super-admin/login', superAdminLogin)
 router.post('/logout', logoutAdmin)
 
 // Protected session & profile routes

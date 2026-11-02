@@ -9,11 +9,16 @@ import {
   resetAdminPassword,
   deleteAdmin
 } from '../controllers/adminManagementController.js'
+import { superAdminLogin } from '../controllers/adminAuthController.js'
 import { protectSuperAdmin } from '../middleware/authMiddleware.js'
+import { loginRateLimiter } from '../middleware/rateLimiter.js'
 
 const router = express.Router()
 
-// All routes in this router require Super Admin privileges
+// Public Super Admin login route alias
+router.post('/login', loginRateLimiter, superAdminLogin)
+
+// All subsequent routes in this router require Super Admin privileges
 router.use(protectSuperAdmin)
 
 // Super Admin Management APIs
