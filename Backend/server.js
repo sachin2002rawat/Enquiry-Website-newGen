@@ -44,29 +44,42 @@ app.set('trust proxy', 1)
 // Configure CORS with credential support
 const allowedOrigins = envConfig.cors.allowedOrigins
 
+const isOriginAllowed = (origin) => {
+  if (!origin) return true
+  const cleanOrigin = origin.replace(/\/+$/, '')
+
+  // Allow wildcard or non-production environments
+  if (allowedOrigins.includes('*') || !envConfig.isProduction) return true
+
+  // Allow explicitly listed origins in environment variables
+  if (allowedOrigins.includes(cleanOrigin) || allowedOrigins.includes(origin)) return true
+
+  // Automatically allow all Render cloud deployments (*.onrender.com) and localhost
+  try {
+    const url = new URL(origin)
+    if (url.hostname.endsWith('.onrender.com')) return true
+    if (url.hostname === 'localhost' || url.hostname === '127.0.0.1') return true
+  } catch {}
+
+  return false
+}
+
 app.use(
   cors({
     origin: (origin, callback) => {
-      // Allow requests with no origin (e.g. mobile apps, curl, server-to-server)
-      if (!origin) return callback(null, true)
-
-      // If wildcard '*' is allowed, echo back the origin so credentialed requests don't fail
-      if (allowedOrigins.includes('*')) {
+      if (isOriginAllowed(origin)) {
         return callback(null, true)
       }
-
-      const cleanOrigin = origin.replace(/\/+$/, '')
-      if (allowedOrigins.includes(cleanOrigin) || allowedOrigins.includes(origin) || !envConfig.isProduction) {
-        return callback(null, true)
-      }
-
-      return callback(new Error(`CORS error: Origin ${origin} not allowed by Access-Control-Allow-Origin`))
+      return callback(null, false)
     },
     credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept', 'Origin']
   })
 )
+
+// Explicitly handle all preflight OPTIONS requests
+app.options('*', cors())
 
 app.use(express.json({ limit: '50mb' }))
 app.use(express.urlencoded({ extended: true, limit: '50mb' }))
