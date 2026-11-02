@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "url": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=1200&q=80",
+    "title": "Radiance Vitamin C Serum",
+    "subtitle": "Discover luminous skin with our 20% Pure Vitamin C & Hyaluronic Acid formula."
+  },
+  {
+    "id": 2,
+    "url": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&q=80",
+    "title": "Rosewater Hydrating Cream",
+    "subtitle": "Ultra-lightweight moisturizer enriched with Damask Rose & organic Aloe Vera."
+  },
+  {
+    "id": 3,
+    "url": "https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=1200&q=80",
+    "title": "Organic Argan Hair Elixir",
+    "subtitle": "Deep nourishment & frizz control crafted with cold-pressed Moroccan Argan Oil."
+  },
+  {
+    "id": 4,
+    "url": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=1200&q=80",
+    "title": "Velvet Matte Lipstick Series",
+    "subtitle": "Richly pigmented, suede-soft lip colors with 12-hour comfortable wear."
+  },
+  {
+    "id": 5,
+    "url": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=80",
+    "title": "French Clay Detox Mask",
+    "subtitle": "Deep pore purification with French Green Clay, Activated Charcoal & Kaolin."
+  }
+]

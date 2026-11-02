@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "slug": "garam-masala",
+    "collection": "Garam Masala Collection",
+    "name": "Garam Masala",
+    "category": "PURE SPICES",
+    "description": "Premium aromatic Indian Garam Masala blend, handpicked and ground to perfection.",
+    "image": "/garam_masala.png",
+    "rating": 4.8,
+    "reviewsCount": 127,
+    "sku": "SKU-GM-001",
+    "netWeight": "100g / Pack",
+    "minOrderQty": "50 Units",
+    "availability": "In Stock",
+    "weight": "100g",
+    "images": [
+      "/garam_masala.png",
+      "/premium_spices.png",
+      "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80"
+    ],
+    "fullDescription": [
+      "Premium aromatic Indian Garam Masala blend, handpicked and ground to perfection using traditional stone-grinding techniques.",
+      "Each pack delivers a rich, fragrant spice profile crafted from cardamom, cinnamon, cloves, cumin, coriander, and black pepper. Perfectly balanced to save cooking time and enhance everyday curries.",
+      "Made with 100% natural spices without any added synthetic colors, artificial flavors, or chemical preservatives, preserving natural essential oils and authentic taste.",
+      "Ideal for home chefs, restaurants, catering services, and commercial kitchens looking for reliable spice consistency and deep Indian curry flavors.",
+      "Hygienically processed and vacuum-sealed to retain peak aroma and long-lasting freshness from our kitchen to yours."
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "masala-tofu",
+    "collection": "Masala Tofu Collection",
+    "name": "Masala Tofu",
+    "category": "YUMII MASALA TOFU",
+    "description": "Artisan Indian spiced masala tofu cubes, packed with organic plant protein.",
+    "image": "/masala_tofu.png",
+    "rating": 4.9,
+    "reviewsCount": 215,
+    "sku": "SKU-MT-002",
+    "netWeight": "200g / Pack",
+    "minOrderQty": "30 Units",
+    "availability": "In Stock",
+    "weight": "200g",
+    "images": [
+      "/masala_tofu.png",
+      "/tofu_pack.png",
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "fullDescription": [
+      "The Yumii Masala Tofu (Soya Paneer) is a masterpiece of authentic Indian culinary heritage, crafted from 100% non-GMO organic soybeans blended with time-honored aromatic spices.",
+      "Each pack delivers a rich, savory taste profile with high-quality plant protein, zero cholesterol, and minimal fat. Perfectly pre-spiced to save cooking time for households, restaurants, and catering services.",
+      "Made with natural ingredients and free from artificial preservatives, our tofu retains its firm yet tender texture whether pan-fried, grilled, curried, or tossed in fresh salads.",
+      "Ideal for health-conscious consumers, fitness enthusiasts, vegans, and commercial buyers looking for dependable quality and authentic Indian flavor.",
+      "Sourced sustainably and packed using advanced freshness-seal technology to ensure maximum shelf life and flavor retention."
+    ]        
+  },
+  {
+    "id": 3,
+    "slug": "coriander-powder",
+    "collection": "Coriander Collection",
+    "name": "Coriander Powder",
+    "category": "PURE SPICES",
+    "description": "Freshly ground fragrant coriander powder sourced from organic farm coriander seeds.",
+    "image": "/coriander_powder.png",
+    "rating": 4.7,
+    "reviewsCount": 98,
+    "sku": "SKU-CP-003",
+    "netWeight": "250g / Pack",
+    "minOrderQty": "50 Units",
+    "availability": "In Stock",
+    "weight": "250g",
+    "images": [
+      "/coriander_powder.png",
+      "/premium_spices.png",
+      "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80"
+    ],
+    "fullDescription": [
+      "Our Coriander Powder (Dhaniya Powder) is made from sun-dried, premium quality coriander seeds sourced directly from organic farms.",
+      "Finely ground to preserve the mild, sweet, and citrusy aroma essential for building rich bases in Indian curries, gravies, and marinades.",
+      "Free from artificial colors, fillers, or synthetic additives. 100% pure and unadulterated spice powder.",
+      "Essential for daily cooking in households, hotels, caterers, and food manufacturing units demanding pure spice standards.",
+      "Sealed in moisture-proof packaging to lock in freshness, vibrant natural color, and essential volatile oils."
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "yumii-masala-tofu-200g",
+    "collection": "Premium Tofu Collection",
+    "name": "Yumii Masala Tofu - 200g",
+    "category": "YUMII MASALA TOFU",
+    "description": "Vacuum sealed premium soy paneer pack, ready to grill, fry, or cook in curries.",
+    "image": "/tofu_pack.png",
+    "rating": 4.9,
+    "reviewsCount": 310,
+    "sku": "SKU-YMT-004",
+    "netWeight": "200g / Pack",
+    "minOrderQty": "40 Units",
+    "availability": "In Stock",
+    "weight": "200g",
+    "images": [
+      "/tofu_pack.png",
+      "/masala_tofu.png",
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "fullDescription": [
+      "Yumii Masala Tofu - 200g offers a delicious, nutrient-dense alternative to cottage cheese (paneer), pre-infused with signature Indian spice seasoning.",
+      "Rich in digestible plant protein, essential amino acids, calcium, and iron while keeping calories and cholesterol low.",
+      "Maintains excellent structural integrity during high-heat cooking — ideal for tikka skewers, stir-fries, biryanis, and gravy curries.",
+      "Trusted by fitness enthusiasts, vegan kitchens, health stores, and institutional B2B buyers.",
+      "Produced in FSSAI-certified facilities using food-grade multi-layer vacuum pouching for extended shelf stability."
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "turmeric-powder",
+    "collection": "Turmeric Collection",
+    "name": "Turmeric Powder",
+    "category": "PURE SPICES",
+    "description": "High-curcumin organic Indian turmeric powder for rich color and natural health benefits.",
+    "image": "/turmeric_powder.png",
+    "rating": 4.8,
+    "reviewsCount": 164,
+    "sku": "SKU-TP-005",
+    "netWeight": "500g / Pack",
+    "minOrderQty": "20 Units",
+    "availability": "In Stock",
+    "weight": "500g",
+    "images": [
+      "/turmeric_powder.png",
+      "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80",
+      "/garam_masala.png"
+    ],
+    "fullDescription": [
+      "Our Turmeric Powder (Haldi) is ground from high-curcumin turmeric roots cultivated in nutrient-rich soils.",
+      "Imparts a rich golden hue, earthy warm flavor, and natural anti-inflammatory antioxidant properties to curries, soups, and golden milk.",
+      "Processed under strict hygienic conditions without added starch, lead chromate, or artificial yellow dyes.",
+      "Widely preferred by households, ayurvedic wellness brands, food processors, and bulk spice importers.",
+      "Packed in light-resistant air-tight pouches to preserve natural curcumin potency and color."
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "cumin-seeds",
+    "collection": "Cumin Collection",
+    "name": "Cumin Seeds",
+    "category": "WHOLE SPICES",
+    "description": "Aromatic whole cumin seeds (Jeera) with high essential oil content and distinct warm aroma.",
+    "image": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80",
+    "rating": 4.6,
+    "reviewsCount": 82,
+    "sku": "SKU-CS-006",
+    "netWeight": "200g / Pack",
+    "minOrderQty": "50 Units",
+    "availability": "In Stock",
+    "weight": "200g",
+    "images": [
+      "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80"
+    ],
+    "fullDescription": [
+      "Hand-cleaned whole Cumin Seeds (Sabut Jeera) boasting a intense, nutty, and warm aromatic profile.",
+      "Essential for tadka (tempering) in dals, curries, rice dishes, and spice roasting.",
+      "Machine-sorted to remove grit and dust, ensuring 99.5% pure whole seed count per pack.",
+      "A staple ingredient across Indian, Middle Eastern, and Mexican culinary applications.",
+      "Sealed in moisture-barrier packaging to retain natural essential oils and crunchy texture."
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "red-chilli-powder",
+    "collection": "Chilli Collection",
+    "name": "Red Chilli Powder",
+    "category": "PURE SPICES",
+    "description": "Vibrant and pungent red chilli powder made from sun-dried premium Indian red chillies.",
+    "image": "/red_chilli_powder.png",
+    "rating": 4.7,
+    "reviewsCount": 145,
+    "sku": "SKU-RC-007",
+    "netWeight": "250g / Pack",
+    "minOrderQty": "50 Units",
+    "availability": "In Stock",
+    "weight": "250g",
+    "images": [
+      "/red_chilli_powder.png",
+      "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80",
+      "/garam_masala.png"
+    ],
+    "fullDescription": [
+      "Vibrant Red Chilli Powder ground from stemless, sun-dried Guntur and Byadgi chillies.",
+      "Delivers the perfect combination of deep natural red color and fiery heat to spicy dishes, marinades, and chutneys.",
+      "100% natural red chilli powder free from artificial red dyes, Sudan red, or added oils.",
+      "Suitable for commercial food processing, B2B wholesale distribution, and everyday home kitchens.",
+      "Packaged in heavy-duty foil-laminated pouches to lock in heat and freshness."
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "black-pepper",
+    "collection": "Black Pepper Collection",
+    "name": "Black Pepper",
+    "category": "WHOLE SPICES",
+    "description": "Bold whole black peppercorns harvested from Malabar coast gardens.",
+    "image": "https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80",
+    "rating": 4.9,
+    "reviewsCount": 188,
+    "sku": "SKU-BP-008",
+    "netWeight": "100g / Pack",
+    "minOrderQty": "60 Units",
+    "availability": "In Stock",
+    "weight": "100g",
+    "images": [
+      "https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80",
+      "/premium_spices.png",
+      "/coriander_powder.png"
+    ],
+    "fullDescription": [
+      "Bold, high-grade whole Black Peppercorns (Kali Mirch) harvested from famous Malabar pepper vines.",
+      "Known as the King of Spices, offering sharp heat, woody aroma, and piperine-rich health benefits.",
+      "Great for fresh pepper grinders, soup stocks, meat rubs, and traditional herbal concoctions.",
+      "Hand-selected for uniform size and minimal moisture content.",
+      "Enclosed in air-tight zip pouches to ensure lasting pungency."
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "green-cardamom",
+    "collection": "Cardamom Collection",
+    "name": "Green Cardamom",
+    "category": "WHOLE SPICES",
+    "description": "Large aromatic green cardamom pods (Elaichi) ideal for Indian desserts and gravies.",
+    "image": "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&w=800&q=80",
+    "rating": 4.9,
+    "reviewsCount": 204,
+    "sku": "SKU-GC-009",
+    "netWeight": "50g / Pack",
+    "minOrderQty": "50 Units",
+    "availability": "In Stock",
+    "weight": "50g",
+    "images": [
+      "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&w=800&q=80",
+      "/premium_spices.png",
+      "/garam_masala.png"
+    ],
+    "fullDescription": [
+      "Premium 8mm+ Green Cardamom Pods (Hari Elaichi) carefully hand-sorted from Western Ghats estates.",
+      "Features plump green husks filled with oil-rich dark seeds that yield intense sweet floral notes.",
+      "Indispensable for sweet dishes like kheer and gulab jamun, as well as masala chai and biryani.",
+      "100% natural without artificial green coloring or chemical polishing.",
+      "Protected in aroma-sealed containers."
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "mixed-indian-spices",
+    "collection": "Indian Spice Collection",
+    "name": "Mixed Indian Spices",
+    "category": "PURE SPICES",
+    "description": "Handpicked compilation of essential Indian kitchen spices for authentic home cooking.",
+    "image": "/premium_spices.png",
+    "rating": 4.8,
+    "reviewsCount": 150,
+    "sku": "SKU-MIS-010",
+    "netWeight": "500g / Pack",
+    "minOrderQty": "20 Units",
+    "availability": "In Stock",
+    "weight": "500g",
+    "images": [
+      "/premium_spices.png",
+      "/garam_masala.png",
+      "/coriander_powder.png"
+    ],
+    "fullDescription": [
+      "A curated assortment of essential whole and ground Indian spices for authentic home dining.",
+      "Includes turmeric, red chilli, coriander, cumin, and garam masala sourced from certified spice gardens.",
+      "Provides rich layered flavors and authentic regional Indian taste without hassle.",
+      "Ideal gift box or starter pack for households and restaurant kitchens.",
+      "Sealed in individual protective pouches inside a sturdy master box."
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "cinnamon-sticks",
+    "collection": "Cinnamon Collection",
+    "name": "Cinnamon Sticks",
+    "category": "WHOLE SPICES",
+    "description": "Sweet and fragrant Ceylon cinnamon quills for tea, biryani, and dessert preparations.",
+    "image": "https://images.unsplash.com/photo-1514733670139-4d87a1941d55?auto=format&fit=crop&w=800&q=80",
+    "rating": 4.7,
+    "reviewsCount": 76,
+    "sku": "SKU-CS-011",
+    "netWeight": "100g / Pack",
+    "minOrderQty": "40 Units",
+    "availability": "In Stock",
+    "weight": "100g",
+    "images": [
+      "https://images.unsplash.com/photo-1514733670139-4d87a1941d55?auto=format&fit=crop&w=800&q=80",
+      "/premium_spices.png",
+      "/garam_masala.png"
+    ],
+    "fullDescription": [
+      "Fragrant Cinnamon Bark Sticks (Dalchini) with natural sweet warmth and low coumarin content.",
+      "Adds complex subtle woody notes to rice pulao, stews, curries, and spiced beverages.",
+      "Carefully dried and cut to uniform stick lengths.",
+      "100% natural, additive-free spice.",
+      "Packed to maintain crisp dry texture and aroma."
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "cloves",
+    "collection": "Clove Collection",
+    "name": "Cloves",
+    "category": "WHOLE SPICES",
+    "description": "Whole clove buds packed with intense essential aroma and warmth.",
+    "image": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80",
+    "rating": 4.6,
+    "reviewsCount": 65,
+    "sku": "SKU-CL-012",
+    "netWeight": "50g / Pack",
+    "minOrderQty": "50 Units",
+    "availability": "In Stock",
+    "weight": "50g",
+    "images": [
+      "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=800&q=80",
+      "/premium_spices.png",
+      "/coriander_powder.png"
+    ],
+    "fullDescription": [
+      "Unbroken whole Clove Buds (Laung) packed with eugenol-rich essential oils.",
+      "Delivers sharp, spicy-sweet aroma to biryani rice, curries, teas, and dental remedies.",
+      "Hand-selected to exclude stems and headless cloves.",
+      "100% pure whole spice.",
+      "Air-tight pouch packaging."
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "chaat-masala",
+    "collection": "Chaat Masala Collection",
+    "name": "Chaat Masala",
+    "category": "MIX MASALA",
+    "description": "Tangy and lip-smacking seasoning mix for street food, fruits, and snacks.",
+    "image": "/premium_spices.png",
+    "rating": 4.8,
+    "reviewsCount": 112,
+    "sku": "SKU-CM-013",
+    "netWeight": "100g / Pack",
+    "minOrderQty": "50 Units",
+    "availability": "In Stock",
+    "weight": "100g",
+    "images": [
+      "/premium_spices.png",
+      "/garam_masala.png",
+      "/coriander_powder.png"
+    ],
+    "fullDescription": [
+      "Tangy Chaat Masala crafted with black salt, dry mango powder (amchur), cumin, and mint.",
+      "Instantly elevates salads, grilled snacks, papdi chaat, and fruit bowls with savory zing.",
+      "Free from artificial acidifiers or anti-caking agents.",
+      "Popular across snack bars, street food stalls, and home kitchens.",
+      "Moisture-proof container."
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "kitchen-king-masala",
+    "collection": "Kitchen King Collection",
+    "name": "Kitchen King Masala",
+    "category": "MIX MASALA",
+    "description": "All-purpose spice blend that elevates everyday curries and vegetable gravies.",
+    "image": "/garam_masala.png",
+    "rating": 4.9,
+    "reviewsCount": 230,
+    "sku": "SKU-KKM-014",
+    "netWeight": "200g / Pack",
+    "minOrderQty": "40 Units",
+    "availability": "In Stock",
+    "weight": "200g",
+    "images": [
+      "/garam_masala.png",
+      "/premium_spices.png",
+      "/coriander_powder.png"
+    ],
+    "fullDescription": [
+      "The ultimate all-in-one spice seasoning blend for North Indian vegetable curries and paneer gravies.",
+      "Combines coriander, cumin, turmeric, cardamom, nutmeg, and black pepper in perfect proportion.",
+      "Saves cooking time while imparting restaurant-style consistency and rich aroma.",
+      "Hygienically ground and packaged.",
+      "Laminated pouch seal for long shelf life."
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "pav-bhaji-masala",
+    "collection": "Pav Bhaji Collection",
+    "name": "Pav Bhaji Masala",
+    "category": "MIX MASALA",
+    "description": "Authentic Mumbai style pav bhaji masala for rich color and aromatic street-style flavor.",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+    "rating": 4.8,
+    "reviewsCount": 178,
+    "sku": "SKU-PBM-015",
+    "netWeight": "100g / Pack",
+    "minOrderQty": "50 Units",
+    "availability": "In Stock",
+    "weight": "100g",
+    "images": [
+      "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+      "/premium_spices.png",
+      "/garam_masala.png"
+    ],
+    "fullDescription": [
+      "Authentic Mumbai Pav Bhaji Masala specially formulated to deliver street-style flavor.",
+      "Blended with coriander, Kashmiri chilli, fennel, clove, star anise, and dry mango.",
+      "Creates a dark red, rich, aromatic vegetable mash dish.",
+      "Ideal for fast food outlets, restaurants, and home cooks.",
+      "Sealed packaging."
+    ]
+  },
+  {
+    "id": 16,
+    "slug": "biryani-masala",
+    "collection": "Biryani Collection",
+    "name": "Biryani Masala",
+    "category": "MIX MASALA",
+    "description": "Royal aromatic spice blend specially formulated for Dum Biryani and Pulao.",
+    "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80",
+    "rating": 4.9,
+    "reviewsCount": 290,
+    "sku": "SKU-BM-016",
+    "netWeight": "100g / Pack",
+    "minOrderQty": "50 Units",
+    "availability": "In Stock",
+    "weight": "100g",
+    "images": [
+      "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80",
+      "/garam_masala.png",
+      "/premium_spices.png"
+    ],
+    "fullDescription": [
+      "Royal Dum Biryani Masala crafted with whole mace, star anise, shahi jeera, cardamom, and saffron notes.",
+      "Unlocks authentic Hyderabadi and Lucknowi Biryani aromas in your kitchen.",
+      "Made with whole spices slow-roasted to release aromatic essential oils.",
+      "100% natural spice blend.",
+      "Aroma-locking foil pack."
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "soya-chunks",
+    "collection": "Soya Collection",
+    "name": "Soya Chunks",
+    "category": "SOYA CHUNKS",
+    "description": "High-protein unflavored soya chunks with soft juicy texture upon cooking.",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
+    "rating": 4.7,
+    "reviewsCount": 134,
+    "sku": "SKU-SC-017",
+    "netWeight": "500g / Pack",
+    "minOrderQty": "30 Units",
+    "availability": "In Stock",
+    "weight": "500g",
+    "images": [
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
+      "/tofu_pack.png",
+      "/masala_tofu.png"
+    ],
+    "fullDescription": [
+      "Nutritious high-protein Soya Chunks containing over 50% plant protein per serving.",
+      "Absorbs gravy flavors rapidly while maintaining a soft, tender meat-like texture.",
+      "Cholesterol-free, low-fat, and rich in dietary fiber for fitness-focused diets.",
+      "Ideal for soya curry, pulao, kebabs, and salads.",
+      "Hygienically packaged."
+    ]
+  },
+  {
+    "id": 18,
+    "slug": "masala-soya-chunks",
+    "collection": "Masala Soya Collection",
+    "name": "Masala Soya Chunks",
+    "category": "SOYA CHUNKS",
+    "description": "Pre-spiced protein soya chunks ready for quick healthy meals.",
+    "image": "/masala_tofu.png",
+    "rating": 4.8,
+    "reviewsCount": 156,
+    "sku": "SKU-MSC-018",
+    "netWeight": "200g / Pack",
+    "minOrderQty": "40 Units",
+    "availability": "In Stock",
+    "weight": "200g",
+    "images": [
+      "/masala_tofu.png",
+      "/tofu_pack.png",
+      "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "fullDescription": [
+      "Pre-marinated Masala Soya Chunks infused with spicy Indian seasoning.",
+      "Saves cooking time — simply rehydrate and sauté or simmer in gravy for 10 minutes.",
+      "Packed with vegan protein and dietary fiber for quick nutritious meals.",
+      "Great for hostels, busy professionals, and caterers.",
+      "Vacuum-sealed freshness."
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "mustard-oil",
+    "collection": "Mustard Oil Collection",
+    "name": "Mustard Oil",
+    "category": "EDIBLE OILS",
+    "description": "Cold-pressed Kachi Ghani mustard oil with natural pungency and health benefits.",
+    "image": "/edible_oils.png",
+    "rating": 4.9,
+    "reviewsCount": 240,
+    "sku": "SKU-MO-019",
+    "netWeight": "1 Litre / Bottle",
+    "minOrderQty": "12 Units",
+    "availability": "In Stock",
+    "weight": "1L",
+    "images": [
+      "/edible_oils.png",
+      "/premium_spices.png",
+      "/garam_masala.png"
+    ],
+    "fullDescription": [
+      "100% Pure Cold-Pressed Kachi Ghani Mustard Oil extracted from finest mustard seeds.",
+      "Features a sharp natural pungency, high smoke point, and ideal Omega-3 to Omega-6 ratio.",
+      "Imparts authentic mustard aroma to North Indian curries, pickles, and deep-fried dishes.",
+      "Unrefined and free from chemical solvents or mineral oil adulteration.",
+      "Bottled in food-grade recyclable containers."
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "groundnut-oil",
+    "collection": "Groundnut Oil Collection",
+    "name": "Groundnut Oil",
+    "category": "EDIBLE OILS",
+    "description": "Filtered pure groundnut cooking oil with light aroma and high smoke point.",
+    "image": "/edible_oils.png",
+    "rating": 4.8,
+    "reviewsCount": 198,
+    "sku": "SKU-GO-020",
+    "netWeight": "5 Litres / Can",
+    "minOrderQty": "4 Cans",
+    "availability": "In Stock",
+    "weight": "5L",
+    "images": [
+      "/edible_oils.png",
+      "/premium_spices.png",
+      "/coriander_powder.png"
+    ],
+    "fullDescription": [
+      "Filtered Pure Groundnut (Peanut) Cooking Oil refined naturally for neutral taste.",
+      "High thermal stability ensures healthy deep-frying without oil breakdown or smoke.",
+      "Rich in monounsaturated healthy fats (MUFA) and Vitamin E.",
+      "Preferred choice for snacks manufacturing, bakeries, and daily home frying.",
+      "Packaged in heavy-duty leak-proof cans."
+    ]
+  },
+  {
+    "id": 21,
+    "slug": "toor-dal",
+    "collection": "Pulses Collection",
+    "name": "Toor Dal",
+    "category": "PULSES",
+    "description": "Unpolished premium split pigeon peas (Arhar Dal) sourced directly from farmers.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "rating": 4.8,
+    "reviewsCount": 160,
+    "sku": "SKU-TD-021",
+    "netWeight": "1kg / Pack",
+    "minOrderQty": "20 Units",
+    "availability": "In Stock",
+    "weight": "1kg",
+    "images": [
+      "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+      "/organic_rice.png",
+      "/premium_spices.png"
+    ],
+    "fullDescription": [
+      "Unpolished premium Toor Dal (Arhar / Split Pigeon Peas) packed with natural proteins.",
+      "Retains its natural dietary fiber and seed coat since it undergoes no artificial oil or water polishing.",
+      "Cooks quickly into a creamy, flavorful dal tadka and sambar.",
+      "100% natural, farm-fresh pulse.",
+      "Cleaned and vacuum packed."
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "moong-dal",
+    "collection": "Moong Collection",
+    "name": "Moong Dal",
+    "category": "PULSES",
+    "description": "Light, easily digestible yellow split moong dal packed with protein.",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+    "rating": 4.7,
+    "reviewsCount": 115,
+    "sku": "SKU-MD-022",
+    "netWeight": "1kg / Pack",
+    "minOrderQty": "20 Units",
+    "availability": "In Stock",
+    "weight": "1kg",
+    "images": [
+      "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+      "/organic_rice.png",
+      "/premium_spices.png"
+    ],
+    "fullDescription": [
+      "Yellow Split Moong Dal (Dhoti Moong) known for easy digestion and high protein density.",
+      "Ideal for comforting khichdi, moong halwa, soups, and daily dal recipes.",
+      "Unpolished grain free from artificial colors or chemicals.",
+      "Suitable for all age groups, recovery diets, and general health diets.",
+      "Hygienically sealed packaging."
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "masoor-dal",
+    "collection": "Masoor Collection",
+    "name": "Masoor Dal",
+    "category": "PULSES",
+    "description": "Nutritious red lentils ideal for wholesome soups, curries, and khichdi.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "rating": 4.8,
+    "reviewsCount": 140,
+    "sku": "SKU-MSD-023",
+    "netWeight": "1kg / Pack",
+    "minOrderQty": "20 Units",
+    "availability": "In Stock",
+    "weight": "1kg",
+    "images": [
+      "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+      "/organic_rice.png",
+      "/premium_spices.png"
+    ],
+    "fullDescription": [
+      "Whole Red Lentils (Masoor Dal) offering a rich earthy taste and high iron content.",
+      "Cooks into a thick delicious dal in under 15 minutes without pre-soaking.",
+      "Rich in folate, dietary fiber, and plant protein.",
+      "Sourced directly from certified lentil growers.",
+      "Moisture-proof packing."
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "basmati-rice",
+    "collection": "Basmati Rice Collection",
+    "name": "Basmati Rice",
+    "category": "RICE",
+    "description": "Extra-long grain aged aromatic Basmati rice for restaurant-quality biryanis.",
+    "image": "/organic_rice.png",
+    "rating": 4.9,
+    "reviewsCount": 350,
+    "sku": "SKU-BR-024",
+    "netWeight": "5kg / Bag",
+    "minOrderQty": "5 Bags",
+    "availability": "In Stock",
+    "weight": "5kg",
+    "images": [
+      "/organic_rice.png",
+      "/premium_spices.png",
+      "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "fullDescription": [
+      "Aged Royal Basmati Rice featuring extra-long slender grains that elongate up to 2x upon cooking.",
+      "Grown in the Himalayan foothills and aged naturally for 12+ months to achieve non-sticky separate grains.",
+      "Exudes an enchanting sweet floral aroma perfect for Dum Biryani, Pulao, and Fried Rice.",
+      "Cleaned and SORTEX-cleared for zero broken grains.",
+      "Packed in heavy-duty woven polypropylene bags with inner liner."
+    ]
+  },
+  {
+    "id": 25,
+    "slug": "sona-masoori-rice",
+    "collection": "Sona Masoori Collection",
+    "name": "Sona Masoori Rice",
+    "category": "RICE",
+    "description": "Lightweight, fluffy white Sona Masoori rice perfect for daily home cooking.",
+    "image": "/organic_rice.png",
+    "rating": 4.8,
+    "reviewsCount": 210,
+    "sku": "SKU-SMR-025",
+    "netWeight": "5kg / Bag",
+    "minOrderQty": "5 Bags",
+    "availability": "In Stock",
+    "weight": "5kg",
+    "images": [
+      "/organic_rice.png",
+      "/premium_spices.png",
+      "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&fit=crop&w=800&q=80"
+    ],
+    "fullDescription": [
+      "Premium Sona Masoori Rice — lightweight, aromatic, and easy to digest for everyday meals.",
+      "Low in starch and calories compared to heavy rice varieties, making it ideal for daily home dining.",
+      "Pairs wonderfully with rasam, sambar, dal tadka, and South Indian rice dishes.",
+      "SORTEX cleaned to guarantee zero stones, husk, or impurities.",
+      "Durable moisture-lock bags."
+    ]
+  }
+]

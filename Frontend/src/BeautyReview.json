@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "category": "SKIN RADIANCE",
+    "rating": 5,
+    "review": "The Radiance Vitamin C Serum completely transformed my skin tone in just two weeks! Dark spots faded and my complexion looks so luminous. Highly recommend!",
+    "name": "Sophia Bennett",
+    "verified": "Verified Buyer",
+    "location": "Mumbai",
+    "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    "id": 2,
+    "category": "HYDRATION BOOST",
+    "rating": 5,
+    "review": "The Rosewater Hydrating Gel Cream is ultra-light and non-greasy. It leaves my skin feeling soft, hydrated, and glowing all day long.",
+    "name": "Priya Sharma",
+    "verified": "Verified Buyer",
+    "location": "Delhi",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    "id": 3,
+    "category": "HAIR ELIXIR",
+    "rating": 5,
+    "review": "The Organic Argan Hair Elixir tames all my frizz without weighing down my hair. It gives an incredible shine and smells heavenly!",
+    "name": "Ananya Verma",
+    "verified": "Verified Buyer",
+    "location": "Bangalore",
+    "image": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    "id": 4,
+    "category": "CLAY DETOX",
+    "rating": 5,
+    "review": "The Detoxifying French Clay Mask visibly shrank my pores and removed excess oil after the first use. Spa-like experience at home!",
+    "name": "Neha Kapoor",
+    "verified": "Verified Buyer",
+    "location": "Pune",
+    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    "id": 5,
+    "category": "MATTE LIPSTICK",
+    "rating": 5,
+    "review": "Velvet Matte Lipstick - Nude Blush is my absolute favorite! Velvet texture, vibrant pigment, and stays on comfortably all day.",
+    "name": "Sneha Gupta",
+    "verified": "Verified Buyer",
+    "location": "Kolkata",
+    "image": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=200&q=80"
+  }
+]

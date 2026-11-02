@@ -1,0 +1,365 @@
+/* ==========================================================================
+   FULL-WIDTH ARCHITECTURAL CONTACT HERO - BALANCED VIEWPORT COVERAGE
+   ========================================================================== */
+
+.contact-hero-section {
+  width: 100%;
+  background-color: #f8fafc;
+  padding: 1rem 1.25rem;
+  min-height: calc(100vh - 85px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.contact-hero-container {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  min-height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px -8px rgba(15, 23, 42, 0.08),
+              0 4px 14px -4px rgba(15, 23, 42, 0.03);
+  /* Left wall architectural background applied across the whole hero */
+  background: radial-gradient(circle at 50% 20%, #ffffff 0%, #f1f5f9 55%, #e2e8f0 100%);
+  border: 1px solid rgba(203, 213, 225, 0.8);
+  padding: 1.6rem 1.75rem 1.25rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Recessed Overhead Warm Spotlight Effect (Top Center Glow) */
+.wall-spotlight-glow {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(254, 243, 199, 0.85) 0%, rgba(253, 230, 138, 0.3) 50%, transparent 75%);
+  filter: blur(30px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Floating Online Status Badge (Top Right Corner - Balanced) */
+.hero-status-floating-card {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(203, 213, 225, 0.8);
+  padding: 5px 12px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+}
+
+.status-avatar-wrapper {
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+
+.status-avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #ffffff;
+}
+
+.online-indicator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e;
+  border: 1.5px solid #ffffff;
+  border-radius: 50%;
+}
+
+.status-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.status-heading {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.1;
+}
+
+.status-sub {
+  font-size: 0.64rem;
+  color: #64748b;
+}
+
+/* --------------------------------------------------------------------------
+   WALL INNER CONTENT (BALANCED VIEWPORT COVERAGE)
+   -------------------------------------------------------------------------- */
+.wall-inner-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Tag Badge */
+.contact-hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.65px;
+  color: #0284c7;
+  margin-bottom: 0.45rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.tag-pulse {
+  width: 6px;
+  height: 6px;
+  background-color: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  animation: pulseGreen 1.8s infinite;
+}
+
+@keyframes pulseGreen {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+/* Main Heading Title */
+.contact-hero-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 900;
+  line-height: 1.05;
+  color: #0f172a;
+  letter-spacing: -0.4px;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+}
+
+/* Subtitle Paragraph */
+.contact-hero-subtitle {
+  font-size: 0.925rem;
+  line-height: 1.45;
+  color: #334155;
+  font-weight: 450;
+  max-width: 530px;
+  margin-bottom: 0.5rem;
+}
+
+/* Center Line Art Illustration Container - Balanced */
+.contact-illustration-container {
+  width: 100%;
+  max-width: 180px;
+  margin: 0.35rem auto 0.75rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.paper-plane-svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  filter: drop-shadow(0 6px 12px rgba(15, 23, 42, 0.07));
+}
+
+/* Floating animation for paper plane */
+.floating-paper-plane-group {
+  transform-origin: 320px 160px;
+  animation: floatPlane 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes floatPlane {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1.5deg);
+  }
+  100% {
+    transform: translateY(2px) rotate(-1deg);
+  }
+}
+
+/* CTA Group Buttons - Balanced */
+.contact-hero-cta-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.85rem;
+}
+
+.contact-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 0.58rem 1.3rem;
+  border-radius: 11px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.1);
+}
+
+.contact-cta-primary:hover {
+  background-color: #0284c7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(2, 132, 199, 0.22);
+}
+
+.contact-cta-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background-color: #25D366;
+  color: #ffffff;
+  padding: 0.58rem 1.25rem;
+  border-radius: 11px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 3px 10px rgba(37, 211, 102, 0.2);
+}
+
+.contact-cta-whatsapp:hover {
+  background-color: #20ba5a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* Quick Info Grid Chips - Balanced */
+.contact-hero-info-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed rgba(148, 163, 184, 0.35);
+  width: 100%;
+}
+
+.info-chip {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-align: left;
+}
+
+.chip-icon {
+  font-size: 1rem;
+  color: #0284c7;
+  background: rgba(2, 132, 199, 0.1);
+  padding: 5px;
+  border-radius: 7px;
+  width: 30px;
+  height: 30px;
+}
+
+.chip-title {
+  font-size: 0.66rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.3px;
+}
+
+.chip-text {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE DESIGN ADAPTATIONS
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .contact-hero-section {
+    min-height: auto;
+    padding: 0.75rem;
+  }
+
+  .contact-hero-container {
+    padding: 1.5rem 1rem 1rem 1rem;
+  }
+
+  .hero-status-floating-card {
+    position: static;
+    margin-bottom: 0.75rem;
+    align-self: center;
+  }
+
+  .contact-hero-title {
+    font-size: 1.7rem;
+  }
+
+  .contact-hero-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .contact-hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.6rem;
+  }
+
+  .contact-cta-primary,
+  .contact-cta-whatsapp {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-hero-info-grid {
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: flex-start;
+  }
+}
+
+

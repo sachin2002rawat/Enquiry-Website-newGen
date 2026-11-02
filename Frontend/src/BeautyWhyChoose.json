@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Dermatologist Approved",
+    "description": "Formulated & tested by skincare experts for maximum safety and efficacy."
+  },
+  {
+    "id": 2,
+    "title": "100% Clean & Vegan",
+    "description": "Free from parabens, sulfates, synthetic dyes, and harsh chemicals."
+  },
+  {
+    "id": 3,
+    "title": "Cruelty-Free Certified",
+    "description": "Ethically crafted without any animal testing, honoring pure nature."
+  },
+  {
+    "id": 4,
+    "title": "Beauty Consult Support",
+    "description": "Our skincare specialists are available 24/7 to guide your personal beauty routine."
+  }
+]

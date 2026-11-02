@@ -1,0 +1,242 @@
+/* ==========================================================================
+   LOCATE OUR BRANCHES - INTERACTIVE EMBEDDED MAP SECTION
+   ========================================================================== */
+
+.locate-map-section {
+  width: 100%;
+  background-color: #f8fafc;
+  padding: 3.5rem 1.5rem 4.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.locate-map-container {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header matching screenshot */
+.locate-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.75rem;
+}
+
+.locate-subtag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #3b82f6;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.subtag-dash {
+  width: 20px;
+  height: 2.5px;
+  background-color: #3b82f6;
+  border-radius: 2px;
+}
+
+.locate-main-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #0f2246;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+}
+
+.locate-main-title .title-light {
+  font-weight: 350;
+  color: #64748b;
+}
+
+/* Location Pills Row */
+.location-pills-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.location-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: #475569;
+  padding: 9px 20px;
+  border-radius: 12px;
+  font-size: 0.925rem;
+  font-weight: 600;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.location-pill-btn:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.location-pill-btn.active {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border-color: #3b82f6;
+  box-shadow: 0 4px 14px rgba(59, 130, 246, 0.35);
+}
+
+.pill-pin-icon {
+  font-size: 1rem;
+}
+
+/* Map Display Box */
+.map-display-box {
+  position: relative;
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px -8px rgba(15, 23, 42, 0.1),
+              0 6px 16px rgba(15, 23, 42, 0.03);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  background-color: #e2e8f0;
+  height: 490px;
+}
+
+.map-display-box iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Top-Left Floating Info Card Overlay */
+.map-top-overlay-card {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 14px;
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-width: 230px;
+}
+
+.top-overlay-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-overlay-city {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.top-overlay-loc {
+  font-size: 0.775rem;
+  color: #64748b;
+}
+
+.top-overlay-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.overlay-action-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: #3b82f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.overlay-action-btn:hover {
+  background: #e2e8f0;
+  transform: scale(1.05);
+}
+
+.overlay-action-btn.primary {
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+.overlay-action-btn.primary:hover {
+  background: #2563eb;
+}
+
+/* Bottom-Left Floating WorkDesk Card Overlay matching screenshot */
+.map-bottom-overlay-card {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  z-index: 10;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 12px 18px;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+  max-width: 290px;
+}
+
+.bottom-card-title {
+  font-size: 0.925rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 3px;
+}
+
+.bottom-card-address {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.35;
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE DESIGN ADAPTATIONS
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .locate-main-title {
+    font-size: 2.15rem;
+  }
+
+  .map-display-box {
+    height: 380px;
+  }
+
+  .map-top-overlay-card {
+    top: 12px;
+    left: 12px;
+    padding: 8px 12px;
+    min-width: auto;
+  }
+
+  .map-bottom-overlay-card {
+    bottom: 12px;
+    left: 12px;
+    padding: 10px 14px;
+    max-width: 240px;
+  }
+}

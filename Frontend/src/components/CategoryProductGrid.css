@@ -1,0 +1,301 @@
+/* CategoryProductGrid Component Vanilla CSS - Matching Image 2 Design */
+
+.category-detail-section {
+  width: 100%;
+  background: #FDFBF7;
+  padding: 50px 0 80px 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #1f2937;
+  min-height: 80vh;
+}
+
+.cpg-container-wrapper {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* Header Area */
+.cpg-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cpg-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cpg-subtitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #8b5cf6;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cpg-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cpg-title-highlight {
+  color: #2563eb;
+}
+
+.cpg-view-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cpg-view-all-link:hover {
+  color: #1d4ed8;
+  transform: translateX(3px);
+}
+
+/* 4-Column Grid Track */
+.cpg-grid-track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+/* Product Card Styling */
+.cpg-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  padding: 20px 20px 22px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 560px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  position: relative;
+}
+
+.cpg-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+  border-color: rgba(37, 99, 235, 0.25);
+}
+
+/* Collection Header Tag */
+.cpg-card-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+  text-align: center;
+}
+
+/* Image Container with Floating PDF Icon Badge */
+.cpg-img-container {
+  width: 100%;
+  height: 330px;
+  background: #f8fafc;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.cpg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.cpg-card:hover .cpg-img {
+  transform: scale(1.05);
+}
+
+/* Top-Right PDF Catalog Badge */
+.cpg-pdf-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  transition: transform 0.2s ease;
+}
+
+.cpg-pdf-badge:hover {
+  transform: scale(1.1);
+}
+
+/* Title & Details */
+.cpg-card-title {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+}
+
+.cpg-card-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #0284c7;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Star Rating Row */
+.cpg-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.cpg-stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.cpg-rating-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.cpg-card-description {
+  font-size: 0.86rem;
+  color: #475569;
+  line-height: 1.45;
+  margin: 0 0 16px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Card Action Buttons */
+.cpg-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.cpg-btn-enquire {
+  flex: 1;
+  height: 44px;
+  background: #1e293b;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba(30, 41, 59, 0.2);
+}
+
+.cpg-btn-enquire:hover {
+  background: #0f172a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(30, 41, 59, 0.35);
+}
+
+.cpg-btn-whatsapp {
+  width: 44px;
+  height: 44px;
+  background: #16a34a;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.25);
+}
+
+.cpg-btn-whatsapp:hover {
+  background: #15803d;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.4);
+}
+
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================== */
+
+@media (max-width: 1200px) {
+  .cpg-grid-track {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cpg-container-wrapper {
+    padding: 0 16px;
+  }
+
+  .cpg-grid-track {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cpg-title {
+    font-size: 1.8rem;
+  }
+
+  .cpg-img-container {
+    height: 440px;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .cpg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}

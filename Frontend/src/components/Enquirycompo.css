@@ -1,0 +1,351 @@
+/* Enquirycompo.css - Glassmorphic Enquiry Form & Modal Styling */
+
+.enquiry-section-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px 80px 20px;
+  background-image: linear-gradient(
+      rgba(240, 243, 246, 0.35),
+      rgba(220, 225, 230, 0.45)
+    ),
+    url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Modal Backdrop Overlay (Unblurred Background) */
+.enquiry-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(15, 23, 42, 0.38);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 16px;
+  animation: enquiryFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes enquiryFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Outer Glass Card Container */
+.enquiry-card {
+  width: 100%;
+  max-width: 480px;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(24px) saturate(190%);
+  -webkit-backdrop-filter: blur(24px) saturate(190%);
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  border-radius: 24px;
+  padding: 36px 32px 36px 32px;
+  box-shadow: 
+    0 24px 50px rgba(0, 0, 0, 0.16),
+    0 4px 16px rgba(0, 0, 0, 0.06),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: enquiryCardPop 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Modal Specific Compact Styles (Fits 100% inside box) */
+.enquiry-card.is-modal-card {
+  padding: 22px 24px 22px 24px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+@keyframes enquiryCardPop {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.enquiry-card:hover {
+  box-shadow: 
+    0 30px 60px rgba(0, 0, 0, 0.18),
+    0 6px 18px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.85);
+}
+
+/* Modal Close Button (X) */
+.enquiry-modal-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #0f172a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+.enquiry-modal-close-btn:hover {
+  background: #ffffff;
+  transform: scale(1.08);
+}
+
+/* Card Header */
+.enquiry-title {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin: 0 0 4px 0;
+}
+
+.is-modal-card .enquiry-title {
+  font-size: 1.38rem;
+  margin-top: 2px;
+}
+
+.enquiry-subtitle {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #334155;
+  text-align: center;
+  line-height: 1.38;
+  margin: 0 0 22px 0;
+  padding: 0 4px;
+}
+
+.is-modal-card .enquiry-subtitle {
+  font-size: 0.85rem;
+  margin-bottom: 14px;
+}
+
+/* Form Styles */
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.is-modal-card .enquiry-form {
+  gap: 12px;
+}
+
+/* Input Field Container */
+.enquiry-field-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.enquiry-label {
+  font-size: 0.92rem;
+  font-weight: 450;
+  color: #1e293b;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.is-modal-card .enquiry-label {
+  font-size: 0.84rem;
+}
+
+.enquiry-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.enquiry-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid #1e293b;
+  padding: 5px 30px 6px 0;
+  font-size: 0.98rem;
+  font-family: inherit;
+  color: #0f172a;
+  outline: none;
+  transition: border-color 0.25s ease;
+}
+
+.is-modal-card .enquiry-input {
+  padding: 3px 28px 4px 0;
+  font-size: 0.92rem;
+}
+
+.enquiry-input:focus {
+  border-bottom-color: #2563eb;
+}
+
+.enquiry-textarea {
+  resize: vertical;
+  min-height: 54px;
+  max-height: 110px;
+  padding: 4px 8px 4px 0 !important;
+  border-bottom: 1.5px solid #1e293b;
+  border-radius: 0;
+  line-height: 1.4;
+}
+
+.enquiry-field-icon {
+  position: absolute;
+  right: 4px;
+  bottom: 6px;
+  color: #1e293b;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+/* Action Button */
+.enquiry-submit-btn {
+  margin-top: 4px;
+  width: 100%;
+  background: linear-gradient(135deg, #4a82e4 0%, #3b74db 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  padding: 11px 22px;
+  font-size: 0.98rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 6px 18px rgba(59, 116, 219, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.is-modal-card .enquiry-submit-btn {
+  padding: 9px 18px;
+  font-size: 0.92rem;
+}
+
+.enquiry-submit-btn:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #3b74db 0%, #2960c7 100%);
+}
+
+.enquiry-btn-arrow {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.25s ease;
+}
+
+.enquiry-submit-btn:hover .enquiry-btn-arrow {
+  transform: translateX(4px);
+}
+
+/* Consent Text */
+.enquiry-consent-text {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #1e293b;
+  margin: -2px 0 0 0;
+  line-height: 1.3;
+  opacity: 0.9;
+}
+
+.is-modal-card .enquiry-consent-text {
+  font-size: 0.78rem;
+}
+
+/* Call Tag Inside Form Flow */
+.enquiry-call-tag {
+  position: relative;
+  margin: 6px auto 0 auto;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 6px 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #0f172a;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.enquiry-call-tag:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.enquiry-call-number {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Success Toast Overlay */
+.enquiry-success-message {
+  text-align: center;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.enquiry-success-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 580px) {
+  .enquiry-card {
+    padding: 20px 18px 20px 18px;
+    border-radius: 16px;
+  }
+
+  .enquiry-title {
+    font-size: 1.25rem;
+  }
+
+  .enquiry-subtitle {
+    font-size: 0.82rem;
+    margin-bottom: 12px;
+  }
+
+  .enquiry-call-tag {
+    font-size: 0.78rem;
+    padding: 5px 12px;
+  }
+}

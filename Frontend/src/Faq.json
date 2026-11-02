@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "question": "How can I submit an enquiry?",
+    "answer": "You can submit an enquiry by filling out the enquiry form on our website. Our team will review your request and get back to you shortly."
+  },
+  {
+    "id": 2,
+    "question": "How long does it take to receive a response?",
+    "answer": "Our team typically responds to enquiries within 24 to 48 business hours."
+  },
+  {
+    "id": 3,
+    "question": "Can I contact your team directly?",
+    "answer": "Yes, you can contact our team through phone, email, or WhatsApp during our business hours."
+  },
+  {
+    "id": 4,
+    "question": "Do you handle business and bulk enquiries?",
+    "answer": "Yes, we welcome business, wholesale, partnership, and bulk enquiries. Please provide your requirements through the enquiry form."
+  },
+  {
+    "id": 5,
+    "question": "Can I request more information about your company?",
+    "answer": "Absolutely. Submit your enquiry with your requirements, and our team will provide the relevant information and assistance."
+  }
+]

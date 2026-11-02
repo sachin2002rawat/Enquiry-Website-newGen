@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "date": "19 Apr 2026",
+    "title": "A Flavorful & Healthy Twist: Exploring Bharat Soya's Masala Tofu Paneer",
+    "description": "Discover a delicious and healthy twist on traditional Indian cuisine with flavorful masala tofu paneer.",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80",
+    "readMore": "Read More"
+  },
+  {
+    "id": 2,
+    "date": "13 Apr 2026",
+    "title": "A Flavorful & Healthy Twist: Exploring Bharat Soya's Masala Tofu Paneer",
+    "description": "Explore the rich flavors and nutritional benefits of masala tofu paneer made with quality ingredients.",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+    "readMore": "Read More"
+  },
+  {
+    "id": 3,
+    "date": "20 Apr 2026",
+    "title": "A Flavorful & Healthy Twist: Exploring Bharat Soya's Masala Tofu Paneer",
+    "description": "Learn how tofu can bring delicious flavor, texture, and nutrition to your everyday meals.",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
+    "readMore": "Read More"
+  },
+  {
+    "id": 4,
+    "date": "08 Apr 2026",
+    "title": "The Art of Perfect Indian Spices",
+    "description": "Discover how carefully selected spices can transform simple dishes into flavorful culinary experiences.",
+    "image": "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=800&q=80",
+    "readMore": "Read More"
+  },
+  {
+    "id": 5,
+    "date": "02 Apr 2026",
+    "title": "Why Quality Ingredients Matter in Every Kitchen",
+    "description": "From sourcing to preparation, quality ingredients play an important role in creating delicious food.",
+    "image": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80",
+    "readMore": "Read More"
+  },
+  {
+    "id": 6,
+    "date": "27 Mar 2026",
+    "title": "Healthy Cooking Made Simple",
+    "description": "Simple ingredients and smart cooking choices can help you create nutritious and delicious everyday meals.",
+    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80",
+    "readMore": "Read More"
+  },
+  {
+    "id": 7,
+    "date": "18 Mar 2026",
+    "title": "Traditional Flavors Meet Modern Food",
+    "description": "Explore the perfect combination of traditional Indian flavors and modern food choices.",
+    "image": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=800&q=80",
+    "readMore": "Read More"
+  },
+  {
+    "id": 8,
+    "date": "10 Mar 2026",
+    "title": "Bringing Authentic Taste to Your Home",
+    "description": "Explore inspiring food ideas and bring authentic flavors and wholesome ingredients into your kitchen.",
+    "image": "https://images.unsplash.com/photo-1509358271058-acd22cc93898?auto=format&fit=crop&w=800&q=80",
+    "readMore": "Read More"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "category": "SKIN RADIANCE",
+    "rating": 5,
+    "review": "Watch how the Vitamin C Serum gave me an instant glow and completely transformed my complexion in 14 days!",
+    "name": "Sophia Bennett",
+    "role": "Dermatologist & Buyer",
+    "productName": "Radiance Vitamin C Serum",
+    "location": "Mumbai",
+    "youtubeId": "L_LUpnjgPso",
+    "thumbnail": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    "id": 2,
+    "category": "HYDRATION BOOST",
+    "rating": 5,
+    "review": "Here is my honest video review after using the Rosewater Hydrating Gel Cream for a month. Absolutely loving the results!",
+    "name": "Priya Sharma",
+    "role": "Beauty Influencer",
+    "productName": "Rosewater Hydrating Gel",
+    "location": "Delhi",
+    "youtubeId": "M7lc1UVf-VE",
+    "thumbnail": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    "id": 3,
+    "category": "HAIR ELIXIR",
+    "rating": 5,
+    "review": "Watch my hair transformation routine with the Organic Argan Hair Elixir. Frizz-free shine guaranteed!",
+    "name": "Ananya Verma",
+    "role": "Hair Stylist",
+    "productName": "Organic Argan Hair Elixir",
+    "location": "Bangalore",
+    "youtubeId": "ysz5S6PUM-U",
+    "thumbnail": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80",
+    "avatar": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    "id": 4,
+    "category": "CLAY DETOX",
+    "rating": 5,
+    "review": "Live pore-cleansing test with the Detoxifying French Clay Mask. See the instant difference on my skin!",
+    "name": "Neha Kapoor",
+    "role": "Skincare Vlogger",
+    "productName": "Detoxifying French Clay Mask",
+    "location": "Pune",
+    "youtubeId": "tgbNymZ7vqY",
+    "thumbnail": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
+  },
+  {
+    "id": 5,
+    "category": "MATTE LIPSTICK",
+    "rating": 5,
+    "review": "Lip swatch & 12-hour wear test video of Velvet Matte Lipstick in Nude Blush shade. So creamy & non-drying!",
+    "name": "Sneha Gupta",
+    "role": "Verified Customer",
+    "productName": "Velvet Matte Lipstick",
+    "location": "Kolkata",
+    "youtubeId": "dQw4w9WgXcQ",
+    "thumbnail": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80",
+    "avatar": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=200&q=80"
+  }
+]

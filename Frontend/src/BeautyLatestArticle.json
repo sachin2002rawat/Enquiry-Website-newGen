@@ -1,0 +1,122 @@
+[
+  {
+    "id": "beauty-1",
+    "slug": "glass-skin-vitamin-c",
+    "name": "The Secret to Glass Skin: 20% Pure Vitamin C & Hyaluronic Acid Guide",
+    "category": "SKINCARE ROUTINE",
+    "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80",
+    "description": "Achieve luminous, translucent glass skin with our expert formulation guide combining 20% L-Ascorbic Acid with multi-molecular Hyaluronic Acid.",
+    "fullDescription": [
+      "Glass skin is all about achieving a poreless, ultra-hydrated, and glowing complexion that looks illuminated from within. The synergy between 20% pure L-Ascorbic Acid (Vitamin C) and low-and-high molecular weight Hyaluronic Acid forms the gold standard of modern skincare science.",
+      "L-Ascorbic Acid neutralizes free radicals, brightens hyperpigmentation, and stimulates collagen synthesis. When paired with multi-weight Hyaluronic Acid, moisture is locked deep within the dermal layers while forming a soothing protective moisture shield on the epidermis.",
+      "For best results, apply 3 to 4 drops onto cleansed, damp skin every morning followed by a broad-spectrum SPF 50 sunscreen. Regular usage over 14 days visibly refines skin texture, minimizes fine lines, and imparts a glass-like radiance."
+    ],
+    "rating": 4.9,
+    "reviewsCount": 342,
+    "date": "September 3, 2026",
+    "readTime": "5 min read",
+    "sku": "BEAUTY-SKIN-881",
+    "netWeight": "50ml / 1.7 fl oz",
+    "availability": "In Stock"
+  },
+  {
+    "id": "beauty-2",
+    "slug": "damask-rose-aloe-vera-hydration",
+    "name": "How Damask Rose & Aloe Vera Deeply Hydrate Skin in Summer",
+    "category": "HYDRATION TIPS",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+    "description": "Beat summer heat and dehydration with natural organic Damask Rose steam distillate paired with cold-extracted organic Aloe Vera gel.",
+    "fullDescription": [
+      "Summer skin faces extreme environmental stressors including UV rays, air conditioning, and heat-induced moisture loss. Pure Damask Rose hydrosol provides immediate anti-inflammatory relief while balancing your skin's natural pH levels.",
+      "Aloe Vera, rich in vitamins A, C, and E, delivers intense cellular hydration without leaving a greasy residue. Its natural polysaccharides form a weightless moisture matrix that repairs damaged skin barriers.",
+      "Incorporate Damask Rose mist as a midday toner and seal with pure Aloe Vera gel before sleeping for refreshed, calm, and supple summer skin."
+    ],
+    "rating": 4.8,
+    "reviewsCount": 289,
+    "date": "August 28, 2026",
+    "readTime": "4 min read",
+    "sku": "BEAUTY-ROSE-882",
+    "netWeight": "100ml / 3.4 fl oz",
+    "availability": "In Stock"
+  },
+  {
+    "id": "beauty-3",
+    "slug": "argan-oil-frizz-control",
+    "name": "Cold-Pressed Moroccan Argan Oil: The Ultimate Frizz Control Secret",
+    "category": "HAIR CARE ELIXIR",
+    "image": "https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=800&q=80",
+    "description": "Nourish dry, unruly strands with 100% pure cold-pressed Moroccan Argan Oil rich in Omega-6 fatty acids and Tocopherols.",
+    "fullDescription": [
+      "Known as liquid gold, Moroccan Argan Oil is harvested from the kernels of the Argan tree. Cold-pressing ensures all essential fatty acids, polyphenols, and Vitamin E remain active and potent.",
+      "It penetrates deep into the hair shaft to seal split ends, smooth hair cuticles, and provide heat protection up to 450°F without weighing down fine or coarse hair textures.",
+      "Apply 2-3 drops to towel-dried hair focusing on mid-lengths to ends for high-shine silkiness and instant frizz immunity."
+    ],
+    "rating": 5.0,
+    "reviewsCount": 512,
+    "date": "August 22, 2026",
+    "readTime": "6 min read",
+    "sku": "BEAUTY-HAIR-883",
+    "netWeight": "60ml / 2.0 fl oz",
+    "availability": "In Stock"
+  },
+  {
+    "id": "beauty-4",
+    "slug": "french-clay-pore-cleansing",
+    "name": "Detoxify & Purify Pores: Deep Pore Cleansing with French Clay",
+    "category": "SPA TREATMENTS",
+    "image": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80",
+    "description": "Extract impurities, excess sebum, and environmental toxins with natural mineral-rich French Green Clay.",
+    "fullDescription": [
+      "French Green Clay owes its vibrant hue to decomposed plant matter and iron oxides. Its unique ionic structure acts like a magnet to draw out impurities trapped deep within pores.",
+      "Rich in montmorillonite, silica, and magnesium, it tightens enlarged pores and boosts blood microcirculation for a invigorated complexion.",
+      "Mix 1 tablespoon of clay with rosewater or thermal spring water. Apply evenly for 10 minutes until tacky, then rinse with lukewarm water once weekly."
+    ],
+    "rating": 4.9,
+    "reviewsCount": 198,
+    "date": "August 15, 2026",
+    "readTime": "5 min read",
+    "sku": "BEAUTY-CLAY-884",
+    "netWeight": "150g / 5.3 oz",
+    "availability": "In Stock"
+  },
+  {
+    "id": "beauty-5",
+    "slug": "suede-matte-lipsticks-guide",
+    "name": "Suede Matte Lipsticks: Long-Wear Hydration & Bold Pigment Guide",
+    "category": "COSMETICS",
+    "image": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=80",
+    "description": "Discover velvet suede matte lip colors infused with jojoba butter and avocado oil for 16-hour comfort wear.",
+    "fullDescription": [
+      "Traditional matte lipsticks often strip lip moisture, leading to cracking and discomfort. Our velvet suede formula combines ultra-fine micronized pigments with nourishing plant oils.",
+      "Jojoba butter and antioxidant-rich Avocado oil ensure seamless glide, feather-resistant coverage, and weightless hydration throughout the day.",
+      "Exfoliate lips gently before application and apply directly from the bullet for full coverage velvet intensity."
+    ],
+    "rating": 4.7,
+    "reviewsCount": 176,
+    "date": "August 10, 2026",
+    "readTime": "4 min read",
+    "sku": "BEAUTY-LIPS-885",
+    "netWeight": "3.8g / 0.13 oz",
+    "availability": "In Stock"
+  },
+  {
+    "id": "beauty-6",
+    "slug": "aromatherapy-lavender-skincare",
+    "name": "Aromatherapy Rituals: Calming Nightly Skincare with Pure Lavender",
+    "category": "ESSENTIAL OILS",
+    "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80",
+    "description": "Transform your evening beauty routine into a soothing nocturnal ritual with French Lavender and Evening Primrose oil.",
+    "fullDescription": [
+      "Your skin undergoes cellular repair and regeneration during nighttime sleep cycles. Inhaling pure Lavandula Angustifolia essential oil activates the parasympathetic nervous system, lowering cortisol levels.",
+      "Evening Primrose oil provides essential Gamma-Linolenic Acid (GLA) to strengthen skin elasticity while reducing nocturnal redness and irritation.",
+      "Warm 3 drops in your palms, inhale deeply three times, and gently press onto clean face and neck before bedtime."
+    ],
+    "rating": 4.9,
+    "reviewsCount": 245,
+    "date": "August 04, 2026",
+    "readTime": "5 min read",
+    "sku": "BEAUTY-OIL-886",
+    "netWeight": "30ml / 1.0 fl oz",
+    "availability": "In Stock"
+  }
+]

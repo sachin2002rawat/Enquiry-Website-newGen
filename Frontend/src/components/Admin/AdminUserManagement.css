@@ -1,0 +1,297 @@
+/* Admin User Management Component Styles */
+
+/* Modal Backdrop & Overlay */
+.admin-modal-backdrop,
+.modal-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(15, 23, 42, 0.75) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  z-index: 999999 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 18px !important;
+  box-sizing: border-box !important;
+  animation: aumFadeIn 0.2s ease-out forwards;
+}
+
+@keyframes aumFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes aumScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Modal Card Container */
+.admin-modal-card,
+.modal-card {
+  background: #ffffff !important;
+  border-radius: 16px !important;
+  border: 1px solid #E2E8F0 !important;
+  width: 100% !important;
+  max-width: 540px !important;
+  max-height: 90vh !important;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.45) !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  position: relative !important;
+  z-index: 1000000 !important;
+  animation: aumScaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  box-sizing: border-box !important;
+}
+
+/* Modal Sections */
+.modal-header {
+  padding: 16px 22px !important;
+  background-color: #FAF6F0 !important;
+  border-bottom: 1px solid #E8E2D8 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-shrink: 0 !important;
+}
+
+.modal-header h3 {
+  margin: 0 !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  color: #1E293B !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.modal-body {
+  padding: 22px !important;
+  overflow-y: auto !important;
+  flex: 1 !important;
+  min-height: 0 !important;
+}
+
+.modal-footer {
+  padding: 14px 22px !important;
+  background-color: #FAF6F0 !important;
+  border-top: 1px solid #E8E2D8 !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  gap: 10px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Form Controls */
+.admin-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.admin-form-label {
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
+  color: #334155 !important;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.admin-form-input,
+.admin-form-select {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  background-color: #FFFFFF !important;
+  border: 1.5px solid #CBD5E1 !important;
+  border-radius: 8px !important;
+  padding: 10px 14px !important;
+  color: #0F172A !important;
+  font-size: 0.9rem !important;
+  outline: none !important;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.admin-form-input:focus,
+.admin-form-select:focus {
+  border-color: #4F46E5 !important;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.18) !important;
+}
+
+.admin-form-input:disabled {
+  background-color: #F1F5F9 !important;
+  color: #64748B !important;
+  cursor: not-allowed !important;
+}
+
+/* Action Buttons in Modals */
+.btn-primary {
+  background: linear-gradient(135deg, #4F46E5, #4338CA) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 10px 18px !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.28) !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, #4338CA, #3730A3) !important;
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.35) !important;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: #FFFFFF !important;
+  color: #475569 !important;
+  border: 1.5px solid #CBD5E1 !important;
+  border-radius: 8px !important;
+  padding: 9px 16px !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: #F8FAFC !important;
+  border-color: #94A3B8 !important;
+  color: #1E293B !important;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #EF4444, #DC2626) !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 10px 18px !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.28) !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: linear-gradient(135deg, #DC2626, #B91C1C) !important;
+  box-shadow: 0 6px 16px rgba(239, 68, 68, 0.35) !important;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  opacity: 0.65 !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+}
+
+/* Action Icon Buttons inside Table */
+.action-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  background: transparent;
+}
+
+.action-icon-btn.edit-btn {
+  background-color: #F8FAFC;
+  border-color: #E2E8F0;
+  color: #334155;
+}
+
+.action-icon-btn.edit-btn:hover {
+  background-color: #EEF2FF;
+  border-color: #C7D2FE;
+  color: #4F46E5;
+  transform: translateY(-1px);
+}
+
+.action-icon-btn.key-btn {
+  background-color: #FEF3C7;
+  border-color: #FDE68A;
+  color: #B45309;
+}
+
+.action-icon-btn.key-btn:hover {
+  background-color: #FDE68A;
+  border-color: #FCD34D;
+  color: #92400E;
+  transform: translateY(-1px);
+}
+
+.action-icon-btn.delete-btn {
+  background-color: #FEF2F2;
+  border-color: #FECACA;
+  color: #DC2626;
+}
+
+.action-icon-btn.delete-btn:hover {
+  background-color: #FEE2E2;
+  border-color: #FCA5A5;
+  color: #B91C1C;
+  transform: translateY(-1px);
+}
+
+/* Permission Checkbox Box */
+.permissions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  background: #F8FAFC;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #E2E8F0;
+  max-height: 170px;
+  overflow-y: auto;
+}
+
+.permission-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  color: #334155;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.permission-checkbox-label:hover {
+  background-color: #EEF2FF;
+  color: #4338CA;
+}

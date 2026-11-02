@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Trusted by Partners",
+    "description": "We are the preferred choice of distributors, wholesalers and retailers across the country."
+  },
+  {
+    "id": 2,
+    "title": "Quality Tested",
+    "description": "Every batch undergoes strict quality checks to meet international standards."
+  },
+  {
+    "id": 3,
+    "title": "Best Prices",
+    "description": "We offer competitive pricing without compromising on quality."
+  },
+  {
+    "id": 4,
+    "title": "Help Center",
+    "description": "Our dedicated support team is available 24/7 to assist you at every step."
+  }
+]

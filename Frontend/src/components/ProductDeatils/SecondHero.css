@@ -1,0 +1,374 @@
+/* SecondHero Component Vanilla CSS */
+
+.second-hero-section {
+  width: 100%;
+  background: linear-gradient(180deg, #FAF7F2 0%, #F4ECE6 50%, #FAF7F2 100%);
+  padding: 40px 0 60px 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #1f2937;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.sh-container-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+/* Two Column Layout */
+.sh-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 36px;
+  align-items: start;
+}
+
+/* ==========================================
+   LEFT COLUMN: PRODUCT DESCRIPTION CARD
+   ========================================== */
+.sh-desc-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  padding: 36px 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.sh-desc-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 16px 0;
+  position: relative;
+}
+
+.sh-heading-divider {
+  width: 100%;
+  height: 1px;
+  background: #e5e7eb;
+  margin-bottom: 24px;
+}
+
+.sh-desc-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.sh-desc-paragraph {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Bottom Feature Banner (Dark Container) */
+.sh-feature-banner {
+  background: #1e232a;
+  border-radius: 16px;
+  padding: 22px 28px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.sh-feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+}
+
+.sh-feature-icon {
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.sh-feature-text-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.sh-feature-text-sub {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+
+/* ==========================================
+   RIGHT COLUMN: BUYING REQUIREMENT FORM & CONTACT
+   ========================================== */
+.sh-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Form Card */
+.sh-form-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 32px 28px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Header */
+.sh-form-header {
+  margin-bottom: 24px;
+}
+
+.sh-form-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 6px 0;
+}
+
+.sh-form-subtitle {
+  font-size: 0.88rem;
+  color: #64748b;
+  margin: 0 0 12px 0;
+}
+
+.sh-accent-bar {
+  width: 44px;
+  height: 4px;
+  background: #2563eb;
+  border-radius: 2px;
+}
+
+/* Form Fields */
+.sh-form-element {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Textarea Group */
+.sh-textarea-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.sh-textarea {
+  width: 100%;
+  min-height: 110px;
+  background: #f1f5f9;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+  padding: 16px 40px 16px 16px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: #1e293b;
+  resize: vertical;
+  box-sizing: border-box;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.sh-textarea:focus {
+  background: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.sh-textarea-icon {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  color: #94a3b8;
+  pointer-events: none;
+}
+
+/* Input Group */
+.sh-input-wrapper {
+  position: relative;
+  width: 100%;
+  border-bottom: 1.5px solid #cbd5e1;
+  transition: border-color 0.2s ease;
+}
+
+.sh-input-wrapper:focus-within {
+  border-color: #2563eb;
+}
+
+.sh-input {
+  width: 100%;
+  height: 46px;
+  background: transparent;
+  border: none;
+  padding: 0 36px 0 0;
+  font-family: inherit;
+  font-size: 0.92rem;
+  color: #1e293b;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.sh-input::placeholder,
+.sh-textarea::placeholder {
+  color: #64748b;
+}
+
+.sh-input-icon {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  pointer-events: none;
+}
+
+/* Submit Button */
+.sh-submit-btn {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(180deg, #2b6cb0 0%, #1e4e8c 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(30, 78, 140, 0.3);
+  transition: all 0.25s ease;
+}
+
+.sh-submit-btn:hover {
+  background: linear-gradient(180deg, #3182ce 0%, #2b6cb0 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(30, 78, 140, 0.4);
+}
+
+.sh-consent-text {
+  font-size: 0.75rem;
+  color: #64748b;
+  text-align: center;
+  margin: 16px 0 0 0;
+  line-height: 1.4;
+}
+
+/* Bottom Quick Contact Row */
+.sh-quick-contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  padding: 12px 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+}
+
+.sh-contact-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #334155;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.sh-contact-pill:hover {
+  background: #ffffff;
+  border-color: #cbd5e1;
+  color: #0f172a;
+  transform: translateY(-1px);
+}
+
+.sh-icon-call {
+  color: #16a34a;
+}
+
+.sh-icon-wa {
+  color: #25d366;
+}
+
+.sh-icon-email {
+  color: #2563eb;
+}
+
+
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================== */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  .second-hero-section {
+    padding: 30px 0 40px 0;
+  }
+
+  .sh-container-wrapper {
+    padding: 0 32px;
+  }
+
+  .sh-grid-container {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .sh-desc-card {
+    padding: 28px 30px;
+  }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .second-hero-section {
+    padding: 20px 0 30px 0;
+  }
+
+  .sh-container-wrapper {
+    padding: 0 16px;
+  }
+
+  .sh-desc-card {
+    padding: 20px 18px;
+  }
+
+  .sh-feature-banner {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 18px;
+  }
+
+  .sh-form-card {
+    padding: 24px 18px;
+  }
+
+  .sh-quick-contact-row {
+    flex-wrap: wrap;
+  }
+}

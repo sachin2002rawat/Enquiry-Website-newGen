@@ -1,0 +1,19 @@
+{
+  "watch": [
+    "controllers",
+    "models",
+    "routes",
+    "config",
+    "middleware",
+    "utils",
+    "server.js"
+  ],
+  "ext": "js,mjs,json",
+  "ignore": [
+    "uploads/*",
+    "node_modules/*",
+    "*.log"
+  ],
+  "exec": "node --max-old-space-size=4096"
+}
+
